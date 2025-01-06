@@ -1,0 +1,109 @@
+*{
+    font-family: roboto;
+}
+body{
+    background-color: rgb(23, 23, 40);
+    margin:0px;
+}
+.he{
+    font-size: 35px;
+    color:white;
+    background-color: rgb(20, 13, 83);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding:10px 0px 10px 0px;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.results{
+    background-color: lightblue;
+}
+.move-img{
+    width: 150px;
+    mix-blend-mode: hard-light;
+    
+}
+.move-img1{
+    width: 150px;
+    mix-blend-mode:soft-light;
+    
+}
+.move-img2{
+    width: 150px;
+    mix-blend-mode:color-dodge;
+    
+}
+.img_btn{
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+    margin-right:30px;
+}
+.game-result{
+    color:white;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.game-moves{
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.current_scores{
+    color:white;
+    font-size: 20px;
+    background-color:transparent;
+    border:none;
+    
+    padding:10px 15px 10px 15px;
+    font-weight: medium;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.btnctr{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+.Reset{
+    padding:10px 15px 10px 15px;
+    border:2px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    background-color:dodgerblue;
+    font-size:15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.choices{
+    display: flex;
+    column-gap: 60px;
+    justify-content: center;
+}
+.choices p{
+    color:white;
+    margin-left:20px;
+    font-size: 15px;
+}
+.auto_play{
+    padding:10px 15px 10px 15px;
+    border:2px solid white;
+    color: white;
+    background-color:black;
+    font-size:15px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.auto_stop{
+    color:black;
+    background-color: white;
+    border: 2px solid black;
+}

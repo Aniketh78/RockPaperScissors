@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="rps1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+ rel="stylesheet">
+    </head>
+    <body>
+        <div class="he">
+            Rock Paper Scissors
+        </div>
+        <div class="choices">
+        </div>
+        <div class="game-moves"></div>
+        <p class="game-result"></p>
+        
+        <div class="current_scores"></div>
+
+        
+        <div class="buttons">
+            <button class="img_btn" onclick="game('Rock')"><img  class="move-img" src="rps_icons\Rock.png"></button>
+            <button class="img_btn" onclick="game('Paper')"><img  class="move-img" src="rps_icons\Paper.png"></button>
+            <button class="img_btn" onclick="game('Scissors')"><img  class="move-img" src="rps_icons\Scissors.png"></button>
+        </div>
+        <div class="btnctr">
+
+            <button class="Reset" onclick="localStorage.removeItem('score');
+            score.wins=0;
+            score.losses=0;
+            score.ties=0;
+            update_scores();
+            document.querySelector('.game-result').innerHTML='';
+            document.querySelector('.game-moves').innerHTML='';
+            document.querySelector('.choices').innerHTML='';">Reset Score</button>
+            <button class="auto_play" onclick="auto_play()">Auto Play</button>
+        </div>
+        
+    </body>
+    <script src="rps2.js"></script>
+</html>
